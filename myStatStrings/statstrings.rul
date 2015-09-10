@@ -1,0 +1,100 @@
+# Based on XcomUtil-version and "Warboy's Custom Statstrings" forum post.
+# See also: http://ufopaedia.org/index.php?title=Statstrings
+#
+#                    |  recruit  |
+# Name:              | min - max | - limit || statstring
+# Time units         |  50 - 60  | -  80   || tu
+# Stamina            |  40 - 70  | - 100   || stamina
+# Health             |  25 - 40  | -  60   || health
+# Bravery            |  10 - 60  | - 100   || bravery
+# Reactions          |  30 - 60  | - 100   || reactions
+# Firing Accuracy    |  40 - 70  | - 120   || firing
+# Throwing Accuracy  |  50 - 80  | - 120   || throwing
+# Melee Accuracy     |  20 - 40  | - 120   || melee
+# Strength           |  20 - 40  | -  70   || strength
+# Psi Sthrength      |   0 - 100 | - 100   || psiStrength
+# Psi Skill          |  16 - 24 *| - 100   || psiSkill
+#
+# * not 0 - 16, since it will only be known after psi training in a psilab.
+#
+# Notes:
+# - Capital letters are "Legendary", meaning >=80% of (limit - min).
+# - Corresponding lowercase letters are mere "mortals", meaning 60% <= stat < 80%
+# - Consider "minions" worthless when =< 30% of recruitment range.
+# - Role based rules, allows for a mixture of names and letters.
+#   Uses spacing to seperate from the letters.
+#   A role requires "mortal" for all mentioned skills.
+
+  statStrings:
+  # Role independent stats.
+    # Defensive Psi
+  - string: "x"             # Puppet (too low).
+    psiStrength: [~, 30]
+  - string: "p"             # On a mind blocker diet.
+    psiStrength: [60, 79]
+  - string: "P"             # Fell in mind blockers.
+    psiStrength: [80, ~]
+    # Defensive brave
+  - string: "c"             # Coward: He said *boo* to me <snif> <snif>
+    bravery: [~, 25]
+  - string: "b"             # I want to be him when I grow up.
+    bravery: [64, 81]
+  - string: "B"             # Suicidal hero.
+    bravery: [82, ~]
+    # Offensive Psi, not a specialized role since it is unconventional.
+    # We might not always want to use this role.
+    # Open for adaption, based on gameplay, especially for the mortals.
+  - string: "u"             # Unskilled: Does everyone wear tinfoil hats??
+    psiSkill: [1, 19]
+  - string: "k"             # Playing hide and seek ... please come to me.
+    psiSkill: [66, 82]
+  - string: "K"             # SUDO power
+    psiSkill: [83, ~]
+    # Common strength
+  - string: "w"             # Weak: Please lower the air pressure.
+    strength: [~, 26]
+  - string: "h"             # Meet me at the gym.
+    strength: [50, 59]
+  - string: "H"             # On steroids.
+    strength: [60, ~]
+  # Sniper (might need to lower requirements)
+  - string: " Sniper"       # Come out, come out ... wherever you are.
+    firing: [88, ~]     # or 70+
+    reactions: [72, ~]
+    # Offensive firing accuracy for non-snipers
+  - string: "o"             # Oeps: The safest place is in front of my gun.
+    firing: [~, 49]      # or 40-
+  - string: "m"             # Marksman and member of a shooting club
+    firing: [88, 103]    # or 60 <-> 69
+  - string: "M"             # Missing is not an option
+    firing: [104, ~]     # or 70
+  # Scout
+  - string: " Scout"         # I will reveal all
+    reactions: [72, ~]
+    tu: [68, ~]
+    stamina: [76, ~]
+    # Offensive reactions for non-scouts
+  - string: "s"             # Slow: What just happened??
+    reactions: [~, 39]
+  - string: "r"             # Hi ho ... you are too slow.
+    reactions: [72, 85]
+  - string: "R"             # Lucky Luke
+    reactions: [86, ~]
+  # Monk (Close combat)
+  - string: " Monk"
+    melee: [80, ~]
+    tu: [68, ~]
+    stamina: [76, ~]
+  # Grenadier and close combat specialist.
+  - string: " Grenadier"
+    tu: [68, ~]
+    throwing: [92, ~]
+    melee: [80, ~]
+  # If nothing else fits, use general designation based on firing.
+  - string: " Soldier"
+    firing: [65, ~]
+  - string: " Grunt"
+    firing: [50, 64]
+
+# tu, stamina, need no further assignment.
+# They are well visible on battle screen.
