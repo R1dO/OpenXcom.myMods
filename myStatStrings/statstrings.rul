@@ -15,86 +15,100 @@
 # Psi Sthrength      |   0 - 100 | - 100   || psiStrength
 # Psi Skill          |  16 - 24 *| - 100   || psiSkill
 #
-# * not 0 - 16, since it will only be known after psi training in a psilab.
+# * Not 0 - 16, since it will only be known after psi training in a psilab.
 #
 # Notes:
-# - Capital letters are "Legendary", meaning >=80% of (limit - min).
-# - Corresponding lowercase letters are mere "mortals", meaning 60% <= stat < 80%
-# - Consider "minions" worthless when =< 30% of recruitment range.
-# - Role based rules, allows for a mixture of names and letters.
-#   Uses spacing to seperate from the letters.
-#   A role requires "mortal" for all mentioned skills.
+# - Lowercased roles are mostly based on initial stats, Uppercased based
+#   on stats from improved soldiers (based on savegame analysis).
+# - Spacing is used to seperate role from letter-stats.
+# - Directly below legendary roles, an optional letter based indicator
+#   of the major skill is used for all other soldiers.
+# - TU and 'stamina', are well visible on battle screen and not
+#   considered important enough to warrant own letter assignments.
+# - 'Throwing' and 'melee' are considered not important enough to
+#   warrant own letter assigments.
+# - Talented stats are put at the end of the file to prevent collision
+#   with legendary non-primary stats.
+# - PC = percentile, rec = recruit, imp = improved only.
 
   statStrings:
   # Role independent stats.
     # Defensive Psi
-  - string: "x"             # Puppet (too low).
-    psiStrength: [~, 30]
-  - string: "p"             # On a mind blocker diet.
-    psiStrength: [60, 79]
-  - string: "P"             # Fell in mind blockers.
-    psiStrength: [80, ~]
+  - string: "x"         # Puppet.
+    psiStrength: [~, 30]    # < 30 PC-rec.
+  - string: "p"         # On a mind blocker diet.
+    psiStrength: [64, 86]   # > 75 PC-rec, < 90 PC-rec.
+  - string: "P"         # Fell in mind blockers.
+    psiStrength: [87, ~]    # > 90 PC-rec.
     # Defensive brave
-  - string: "c"             # Coward: He said *boo* to me <snif> <snif>
-    bravery: [~, 25]
-  - string: "b"             # I want to be him when I grow up.
-    bravery: [64, 81]
-  - string: "B"             # Suicidal hero.
-    bravery: [82, ~]
+  - string: "c"         # Coward: He said *boo* to me <snif> <snif>
+    bravery: [~, 20]        # < 15 PC-rec.
+  - string: "b"         # I want to be him when I grow up.
+    bravery: [50, 59]       # > 75 PC-rec, < 90 PC-all.
+  - string: "B"         # Suicidal hero.
+    bravery: [60, ~]        # > 90 PC-all.
     # Offensive Psi, not a specialized role since it is unconventional.
     # We might not always want to use this role.
-    # Open for adaption, based on gameplay, especially for the mortals.
-  - string: "u"             # Unskilled: Does everyone wear tinfoil hats??
-    psiSkill: [1, 19]
+    # Note: usage of '1' when '~' is meant, otherwise ' psi-student' reveals weak players from start?
+  - string: " psi-stud"     # Unskilled: Does everyone wear tinfoil hats??
+    psiSkill: [1, 16]           # Lowest possible value, keeping in lab is better than mission experience.
   - string: "k"             # Playing hide and seek ... please come to me.
-    psiSkill: [66, 82]
+    psiSkill: [60, 79]          # Not based on stats, wish > 70 PC-all, < 90 PC-all.
   - string: "K"             # SUDO power
-    psiSkill: [83, ~]
-    # Common strength
+    psiSkill: [80, ~]           # Not based on stats, wish > 90 PC-all.
+    # Common strength (we want this one JUST before potential roles).
   - string: "w"             # Weak: Please lower the air pressure.
-    strength: [~, 26]
+    strength: [~, 22]           # < 15 PC-rec.
   - string: "h"             # Meet me at the gym.
-    strength: [50, 59]
+    strength: [35, 44]          # > 75 PC-rec, < 90 PC-imp.
   - string: "H"             # On steroids.
-    strength: [60, ~]
-  # Sniper (might need to lower requirements)
-  - string: " Sniper"       # Come out, come out ... wherever you are.
-    firing: [88, ~]     # or 70+
-    reactions: [72, ~]
-    # Offensive firing accuracy for non-snipers
-  - string: "o"             # Oeps: The safest place is in front of my gun.
-    firing: [~, 49]      # or 40-
-  - string: "m"             # Marksman and member of a shooting club
-    firing: [88, 103]    # or 60 <-> 69
-  - string: "M"             # Missing is not an option
-    firing: [104, ~]     # or 70
-  # Scout
-  - string: " Scout"         # I will reveal all
-    reactions: [72, ~]
-    tu: [68, ~]
-    stamina: [76, ~]
+    strength: [45, ~]           # > 90 PC-imp.
+  # Legendary stats
+    # Legendary Sniper
+  - string: " SNPR"         # Come out, come out ... wherever you are.
+    firing: [70, ~]             # > 90 PC-imp.
+    reactions: [58, ~]          # > 90 PC-imp.
+    # Offensive firing accuracy for non-snipers, e.g. marksman.
+  - string: "%"             # The safest place is in front of my gun.
+    firing: [~, 44]             # < 15 PC-rec.
+  - string: "m"             # Member of a shooting club
+    firing: [64, 69]            # > 75 PC-imp, < 90 PC-imp. (appr. > 80 PC-rec)
+  - string: "M"             # Take a peak ... please ... pretty please?
+    firing: [70, ~]             # > 90 PC-imp.
+    # Legendary Scout
+  - string: " SCT"         # I will reveal all
+    reactions: [58, ~]          # > 90 PC-imp.
+    tu: [69, ~]                 # > 90 PC-imp.
+    stamina: [74, ~]            # > 90 PC-imp.
     # Offensive reactions for non-scouts
   - string: "s"             # Slow: What just happened??
-    reactions: [~, 39]
-  - string: "r"             # Hi ho ... you are too slow.
-    reactions: [72, 85]
+    reactions: [~, 34]          # < 15 PC-rec.
+  - string: "r"             # Hi ho ... you'r too slow.
+    reactions: [53, 57]         # > 75 PC-rec, < 90 PC-imp.
   - string: "R"             # Lucky Luke
-    reactions: [86, ~]
-  # Monk (Close combat)
-  - string: " Monk"
-    melee: [80, ~]
-    tu: [68, ~]
-    stamina: [76, ~]
-  # Grenadier and close combat specialist.
-  - string: " Grenadier"
-    tu: [68, ~]
-    throwing: [92, ~]
-    melee: [80, ~]
-  # If nothing else fits, use general designation based on firing.
-  - string: " Soldier"
-    firing: [65, ~]
-  - string: " Grunt"
-    firing: [50, 64]
+    reactions: [58, ~]          # > 90 PC-imp.
+    #~ # Monk (Close combat)
+  #~ - string: " MONK"
+    #~ melee: [38, ~]               # > 90 PC-all.
+    #~ tu: [69, ~]                  # > 90 PC-imp.
+    #~ stamina: [74, ~]             # > 90 PC-imp.
+    #~ # Grenadier and close combat specialist.
+  #~ - string: " GRND"
+    #~ tu: [69, ~]                  # > 90 PC-imp.
+    #~ throwing: [78, ~]            # > 90 PC-all.
+    #~ melee: [38, ~]               # > 90 PC-all.
+    #~ strength: [45, ~]            # > 90 PC-imp.
+  # Talented stats
+    # Talented Sniper
+  - string: " Snpr"
+    firing: [67, ~]             # > 90 PC-rec
+    reactions: [56, ~]          # > 90 PC-rec
+    # Talented Scout
+  - string: " Sct"
+    reactions: [56, ~]          # > 90 PC-rec.
+    tu: [60, ~]                 # > 90 PC-rec.
+    stamina: [67, ~]            # > 90 PC-rec.
 
-# tu, stamina, need no further assignment.
-# They are well visible on battle screen.
+
+
+
