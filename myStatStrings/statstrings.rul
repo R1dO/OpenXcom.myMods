@@ -32,17 +32,26 @@
 # - PC = percentile, rec = recruit, imp = improved only.
 
   statStrings:
-  # Role independent stats.
-    # Defensive Psi
+  # Start with negative identifiers
+  - string: " psi-stud" # Unskilled: Does everyone wear tinfoil hats??
+    psiSkill: [1, 16]       # Lowest possible value, training in lab outclasses mission experience.
   - string: "x"         # Puppet.
     psiStrength: [~, 30]    # < 30 PC-rec.
+  - string: "c"         # Coward: He said *boo* to me <snif> <snif>
+    bravery: [~, 10]        # < 10 PC-rec.
+  - string: "w"         # Weak: Please lower gravity.
+    strength: [~, 27]       # < 15 PC-rec.
+  - string: "s"         # Slow: What just happened??
+    reactions: [~, 36]      # < 15 PC-rec.
+  - string: "%"         # The safest place is in front of my gun.
+    firing: [~, 45]         # < 15 PC-rec.
+  # Role independent stats.
+    # Defensive Psi
   - string: "p"         # On a mind blocker diet.
     psiStrength: [64, 86]   # > 75 PC-rec, < 90 PC-rec.
   - string: "P"         # Fell in mind blockers.
     psiStrength: [87, ~]    # > 90 PC-rec.
     # Defensive brave
-  - string: "c"         # Coward: He said *boo* to me <snif> <snif>
-    bravery: [~, 20]        # < 15 PC-rec.
   - string: "b"         # I want to be him when I grow up.
     bravery: [50, 59]       # > 75 PC-rec, < 90 PC-all.
   - string: "B"         # Suicidal hero.
@@ -50,17 +59,13 @@
     # Offensive Psi, not a specialized role since it is unconventional.
     # We might not always want to use this role.
     # Note: usage of '1' when '~' is meant, otherwise ' psi-student' reveals weak players from start?
-  - string: " psi-stud"     # Unskilled: Does everyone wear tinfoil hats??
-    psiSkill: [1, 16]           # Lowest possible value, keeping in lab is better than mission experience.
   - string: "k"             # Playing hide and seek ... please come to me.
     psiSkill: [60, 79]          # Not based on stats, wish > 70 PC-all, < 90 PC-all.
   - string: "K"             # SUDO power
     psiSkill: [80, ~]           # Not based on stats, wish > 90 PC-all.
     # Common strength (we want this one JUST before potential roles).
-  - string: "w"             # Weak: Please lower the air pressure.
-    strength: [~, 22]           # < 15 PC-rec.
   - string: "h"             # Meet me at the gym.
-    strength: [35, 44]          # > 75 PC-rec, < 90 PC-imp.
+    strength: [37, 44]          # > 75 PC-rec, < 90 PC-imp.
   - string: "H"             # On steroids.
     strength: [45, ~]           # > 90 PC-imp.
   # Legendary stats
@@ -69,8 +74,6 @@
     firing: [70, ~]             # > 90 PC-imp.
     reactions: [58, ~]          # > 90 PC-imp.
     # Offensive firing accuracy for non-snipers, e.g. marksman.
-  - string: "%"             # The safest place is in front of my gun.
-    firing: [~, 44]             # < 15 PC-rec.
   - string: "m"             # Member of a shooting club
     firing: [64, 69]            # > 75 PC-imp, < 90 PC-imp. (appr. > 80 PC-rec)
   - string: "M"             # Take a peak ... please ... pretty please?
@@ -81,34 +84,28 @@
     tu: [69, ~]                 # > 90 PC-imp.
     stamina: [74, ~]            # > 90 PC-imp.
     # Offensive reactions for non-scouts
-  - string: "s"             # Slow: What just happened??
-    reactions: [~, 34]          # < 15 PC-rec.
   - string: "r"             # Hi ho ... you'r too slow.
-    reactions: [53, 57]         # > 75 PC-rec, < 90 PC-imp.
+    reactions: [54, 57]         # > 75 PC-rec, < 90 PC-imp.
   - string: "R"             # Lucky Luke
     reactions: [58, ~]          # > 90 PC-imp.
     #~ # Monk (Close combat)
   #~ - string: " MONK"
-    #~ melee: [38, ~]               # > 90 PC-all.
+    #~ melee: [65, ~]               # > 90 PC-all.
     #~ tu: [69, ~]                  # > 90 PC-imp.
     #~ stamina: [74, ~]             # > 90 PC-imp.
     #~ # Grenadier and close combat specialist.
   #~ - string: " GRND"
     #~ tu: [69, ~]                  # > 90 PC-imp.
     #~ throwing: [78, ~]            # > 90 PC-all.
-    #~ melee: [38, ~]               # > 90 PC-all.
+    #~ melee: [65, ~]               # > 90 PC-all.
     #~ strength: [45, ~]            # > 90 PC-imp.
   # Talented stats
     # Talented Sniper
   - string: " Snpr"
     firing: [67, ~]             # > 90 PC-rec
-    reactions: [56, ~]          # > 90 PC-rec
+    reactions: [54, ~]          # > 90 PC-rec
     # Talented Scout
   - string: " Sct"
-    reactions: [56, ~]          # > 90 PC-rec.
-    tu: [60, ~]                 # > 90 PC-rec.
-    stamina: [67, ~]            # > 90 PC-rec.
-
-
-
-
+    reactions: [54, ~]          # > 90 PC-rec.
+    tu: [58, ~]                 # > 90 PC-rec.
+    stamina: [66, ~]            # > 90 PC-rec.
