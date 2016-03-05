@@ -1,0 +1,4 @@
+# Based on UFOextender by Seb76 and Tycho
+items:
+  - type: STR_PSI_AMP
+    LOSRequired: true

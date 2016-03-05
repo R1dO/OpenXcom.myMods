@@ -1,0 +1,9 @@
+#
+# metadata.yaml for personalized version of UFOextender Psionic Line Of Fire
+
+name: "R1dO - Alternate Psionic Line Of Fire"
+version: 0.1
+description: "Psionic offensive weapons (X-COM) can only be used with direct line-of-sight to the target."
+author: R1dO (original: the OpenXcom team)
+
+master: xcom1
