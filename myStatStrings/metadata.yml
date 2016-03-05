@@ -1,9 +1,9 @@
 #
 # metadata.yaml for personalized version of XcomUtil Statstrings
 
-name: "R1dO - Statstrings"
+name: "R1dO - Alternate Statstrings"
 version: 0.3
 description: "Personalized version of 'XcomUtil: Statstrings'"
-author: the OpenXcom team - adapted by R1dO.
+author: R1dO (original: the OpenXcom team)
 
 master: "*"
