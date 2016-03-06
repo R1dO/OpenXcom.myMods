@@ -37,8 +37,7 @@
   statStrings:
   # Start with negative identifiers
   - string: " psi-stud"    # Unskilled: Does everyone wear tinfoil hats??
-    psiSkill: [1, 16]        # Lowest possible value, training in lab outclasses mission experience.
-    # Note: usage of '1' when '~' is meant, otherwise ' psi-student' reveals weak players from start?
+    psiSkill: [~, 16]        # Lowest possible value, training in lab outclasses mission experience.
   - string: "x"            # Puppet.
     psiStrength: [~, 34]     # < 30 PC-rec.
   - string: "c"            # Coward: He said *boo* to me <snif> <snif>
