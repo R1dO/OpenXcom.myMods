@@ -1,19 +1,19 @@
 # Based on XcomUtil-version and "Warboy's Custom Statstrings" forum post.
 # See also: http://ufopaedia.org/index.php?title=Statstrings
 #
-#                    |  recruit  |
-# Name:              | min - max | - limit || statstring
-# Time units         |  50 - 60  | -  80   || tu
-# Stamina            |  40 - 70  | - 100   || stamina
-# Health             |  25 - 40  | -  60   || health
-# Bravery            |  10 - 60  | - 100   || bravery
-# Reactions          |  30 - 60  | - 100   || reactions
-# Firing Accuracy    |  40 - 70  | - 120   || firing
-# Throwing Accuracy  |  50 - 80  | - 120   || throwing
-# Melee Accuracy     |  20 - 40  | - 120   || melee
-# Strength           |  20 - 40  | -  70   || strength
-# Psi Sthrength      |   0 - 100 | - 100   || psiStrength
-# Psi Skill          |  16 - 24 *| - 100   || psiSkill
+#                    |  recruit  |                     | Single character    |
+# Name:              | min - max | limit | statstring  | negative | positive |
+# Time units         |  50 - 60  |  80   | tu          |          |          |
+# Stamina            |  40 - 70  | 100   | stamina     |          |          |
+# Health             |  25 - 40  |  60   | health      |          |      a/A |
+# Bravery            |  10 - 60  | 100   | bravery     | c        | b/B      |
+# Reactions          |  30 - 60  | 100   | reactions   | s        |      r/R |
+# Firing Accuracy    |  40 - 70  | 120   | firing      | u        |      m/M |
+# Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
+# Melee Accuracy     |  20 - 40  | 120   | melee       |          |      +/* |
+# Strength           |  20 - 40  |  70   | strength    | w        | h/H      |
+# Psi Sthrength      |   0 - 100 | 100   | psiStrength | x        | p/P ?    |
+# Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I ?    |
 #
 # * Not 0 - 16, since it will only be known after psi training in a psilab.
 #
