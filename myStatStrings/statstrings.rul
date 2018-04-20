@@ -7,8 +7,8 @@
 # Stamina            |  40 - 70  | 100   | stamina     |          |          |
 # Health             |  25 - 40  |  60   | health      |          |      a/A |
 # Bravery            |  10 - 60  | 100   | bravery     | c        | b/B      |
-# Reactions          |  30 - 60  | 100   | reactions   | s        |      r/R |
-# Firing Accuracy    |  40 - 70  | 120   | firing      | u        |      m/M |
+# Reactions          |  30 - 60  | 100   | reactions   |          |      r/R |
+# Firing Accuracy    |  40 - 70  | 120   | firing      | %        |      m/M |
 # Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
 # Melee Accuracy     |  20 - 40  | 120   | melee       |          |      +/* |
 # Strength           |  20 - 40  |  70   | strength    | w        | h/H      |
@@ -44,12 +44,8 @@
     bravery: [~, 15]         # < 10 PC-rec.
   - string: "w"            # Weak: Please lower gravity.
     strength: [~, 22]        # < 15 PC-rec.
-  - string: "s"            # Slow: What just happened??
-    reactions: [~, 35]       # < 15 PC-rec.
-  - string: "u"            # The safest place is in front of my gun.
+  - string: "%"            # The safest place is in front of my gun.
     firing: [~, 45]          # < 15 PC-rec.
-  #~ - string: ","           # Did you just drop the grenade ?!!?
-    #~ throwing: [~, 52]       # < 15 PC-rec.
 
   # Spacing, use from above
   - string: " "
@@ -58,8 +54,6 @@
     bravery: [~, 15]
   - string: " "
     strength: [~, 22]
-  - string: " "
-    reactions: [~, 35]
   - string: " "
     firing: [~, 45]
 
