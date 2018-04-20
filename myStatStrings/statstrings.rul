@@ -12,8 +12,8 @@
 # Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
 # Melee Accuracy     |  20 - 40  | 120   | melee       |          |      +/* |
 # Strength           |  20 - 40  |  70   | strength    | w        | h/H      |
-# Psi Sthrength      |   0 - 100 | 100   | psiStrength | x        | p/P ?    |
-# Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I ?    |
+# Psi Sthrength      |   0 - 100 | 100   | psiStrength | x        | p/P      |
+# Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I      |
 #
 # * Not 0 - 16, since it will only be known after psi training in a psilab.
 #
