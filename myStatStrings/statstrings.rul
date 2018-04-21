@@ -1,19 +1,19 @@
 # Based on XcomUtil-version and "Warboy's Custom Statstrings" forum post.
 # See also: http://ufopaedia.org/index.php?title=Statstrings
 #
-#                    |  recruit  |
-# Name:              | min - max | - limit || statstring
-# Time units         |  50 - 60  | -  80   || tu
-# Stamina            |  40 - 70  | - 100   || stamina
-# Health             |  25 - 40  | -  60   || health
-# Bravery            |  10 - 60  | - 100   || bravery
-# Reactions          |  30 - 60  | - 100   || reactions
-# Firing Accuracy    |  40 - 70  | - 120   || firing
-# Throwing Accuracy  |  50 - 80  | - 120   || throwing
-# Melee Accuracy     |  20 - 40  | - 120   || melee
-# Strength           |  20 - 40  | -  70   || strength
-# Psi Sthrength      |   0 - 100 | - 100   || psiStrength
-# Psi Skill          |  16 - 24 *| - 100   || psiSkill
+#                    |  recruit  |                     | Single character    |
+# Name:              | min - max | limit | statstring  | negative | positive |
+# Time units         |  50 - 60  |  80   | tu          |          |          |
+# Stamina            |  40 - 70  | 100   | stamina     |          |          |
+# Health             |  25 - 40  |  60   | health      |          |      a/A |
+# Bravery            |  10 - 60  | 100   | bravery     | c        | b/B      |
+# Reactions          |  30 - 60  | 100   | reactions   |          |      r/R |
+# Firing Accuracy    |  40 - 70  | 120   | firing      | %        |      m/M |
+# Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
+# Melee Accuracy     |  20 - 40  | 120   | melee       |          |      +/* |
+# Strength           |  20 - 40  |  70   | strength    | w        | h/H      |
+# Psi Sthrength      |   0 - 100 | 100   | psiStrength | x        | p/P      |
+# Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I      |
 #
 # * Not 0 - 16, since it will only be known after psi training in a psilab.
 #
@@ -44,12 +44,8 @@
     bravery: [~, 15]         # < 10 PC-rec.
   - string: "w"            # Weak: Please lower gravity.
     strength: [~, 22]        # < 15 PC-rec.
-  - string: "s"            # Slow: What just happened??
-    reactions: [~, 35]       # < 15 PC-rec.
-  - string: "u"            # The safest place is in front of my gun.
+  - string: "%"            # The safest place is in front of my gun.
     firing: [~, 45]          # < 15 PC-rec.
-  #~ - string: ","           # Did you just drop the grenade ?!!?
-    #~ throwing: [~, 52]       # < 15 PC-rec.
 
   # Spacing, use from above
   - string: " "
@@ -58,8 +54,6 @@
     bravery: [~, 15]
   - string: " "
     strength: [~, 22]
-  - string: " "
-    reactions: [~, 35]
   - string: " "
     firing: [~, 45]
 
@@ -76,7 +70,7 @@
     psiStrength: [85, ~]    # > 90 PC-imp.
     # Common strength (we want those JUST before potential roles).
   - string: "h"           # Meet me at the gym.
-    strength: [34, 59]      # > 75 PC-all, < 80 PC-imp.
+    strength: [35, 59]      # > 75 PC-all, < 80 PC-imp.
   - string: "H"           # On steroids.
     strength: [60, ~]       # > 80 PC-imp.
     # Defensive brave
@@ -97,8 +91,8 @@
     reactions: [86, ~]      # > 80 PC-imp.
     melee: [55, ~]           # 2nd, > 75 PC-rec
     health: [37, ~]          # 2nd, > 75 PC-rec
-    stamina: [57, ~]         # 2nd, > > 75 PC-rec.
-    tu: [57, ~]              # 2nd, > > 75 PC-rec.
+    stamina: [60, ~]         # 2nd, > > 75 PC-rec.
+    tu: [60, ~]              # 2nd, > > 75 PC-rec.
     # Legendary Scout
   - string: " SCT"        # I will reveal all
     reactions: [86, ~]      # > 80 PC-imp.
@@ -113,8 +107,8 @@
     melee: [100, ~]         # > 80 PC-imp
     firing: [64, ~]          # 2nd, > 75 PC-rec
     reactions: [53, ~]       # 2nd, > 80 PC-rec
-    stamina: [57, ~]         # 2nd, > > 75 PC-rec.
-    tu: [57, ~]              # 2nd, > > 75 PC-rec.
+    stamina: [60, ~]         # 2nd, > > 75 PC-rec.
+    tu: [60, ~]              # 2nd, > > 75 PC-rec.
 
     # Legendary capabilities (for those that didn't graduate)
   - string: "M"           # Take a peak ... please ... pretty please?
@@ -134,11 +128,11 @@
     # Talented Scout
   - string: " Sct"
     reactions: [53, ~]    # > 80 PC-rec
-    tu: [57, ~]           # > 75 PC-rec.
-    stamina: [57, ~]      # > 75 PC-rec.
-    reactions: [53, ~]    # > 80 PC-rec
+    tu: [60, ~]           # > 75 PC-rec.
+    stamina: [60, ~]      # > 75 PC-rec.
     # Talented Soldier (breach ufo)
   - string: " Sldr"
+    reactions: [53, ~]    # > 80 PC-rec
     health: [37, ~]       # > 75 PC-rec
     melee: [55, ~]        # > 75 PC-rec
 
