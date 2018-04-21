@@ -70,7 +70,7 @@
     psiStrength: [85, ~]    # > 90 PC-imp.
     # Common strength (we want those JUST before potential roles).
   - string: "h"           # Meet me at the gym.
-    strength: [34, 59]      # > 75 PC-all, < 80 PC-imp.
+    strength: [35, 59]      # > 75 PC-all, < 80 PC-imp.
   - string: "H"           # On steroids.
     strength: [60, ~]       # > 80 PC-imp.
     # Defensive brave
@@ -91,8 +91,8 @@
     reactions: [86, ~]      # > 80 PC-imp.
     melee: [55, ~]           # 2nd, > 75 PC-rec
     health: [37, ~]          # 2nd, > 75 PC-rec
-    stamina: [57, ~]         # 2nd, > > 75 PC-rec.
-    tu: [57, ~]              # 2nd, > > 75 PC-rec.
+    stamina: [60, ~]         # 2nd, > > 75 PC-rec.
+    tu: [60, ~]              # 2nd, > > 75 PC-rec.
     # Legendary Scout
   - string: " SCT"        # I will reveal all
     reactions: [86, ~]      # > 80 PC-imp.
@@ -107,8 +107,8 @@
     melee: [100, ~]         # > 80 PC-imp
     firing: [64, ~]          # 2nd, > 75 PC-rec
     reactions: [53, ~]       # 2nd, > 80 PC-rec
-    stamina: [57, ~]         # 2nd, > > 75 PC-rec.
-    tu: [57, ~]              # 2nd, > > 75 PC-rec.
+    stamina: [60, ~]         # 2nd, > > 75 PC-rec.
+    tu: [60, ~]              # 2nd, > > 75 PC-rec.
 
     # Legendary capabilities (for those that didn't graduate)
   - string: "M"           # Take a peak ... please ... pretty please?
@@ -128,8 +128,8 @@
     # Talented Scout
   - string: " Sct"
     reactions: [53, ~]    # > 80 PC-rec
-    tu: [57, ~]           # > 75 PC-rec.
-    stamina: [57, ~]      # > 75 PC-rec.
+    tu: [60, ~]           # > 75 PC-rec.
+    stamina: [60, ~]      # > 75 PC-rec.
     # Talented Soldier (breach ufo)
   - string: " Sldr"
     reactions: [53, ~]    # > 80 PC-rec
