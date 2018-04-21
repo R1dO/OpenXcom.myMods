@@ -130,9 +130,9 @@
     reactions: [53, ~]    # > 80 PC-rec
     tu: [57, ~]           # > 75 PC-rec.
     stamina: [57, ~]      # > 75 PC-rec.
-    reactions: [53, ~]    # > 80 PC-rec
     # Talented Soldier (breach ufo)
   - string: " Sldr"
+    reactions: [53, ~]    # > 80 PC-rec
     health: [37, ~]       # > 75 PC-rec
     melee: [55, ~]        # > 75 PC-rec
 
