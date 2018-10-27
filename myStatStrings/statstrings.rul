@@ -42,20 +42,6 @@
     psiStrength: [~, 34]     # < 30 PC-rec.
   - string: "_"            # Coward: He said *boo* to me <snif> <snif>
     bravery: [~, 15]         # < 10 PC-rec.
-#  - string: "w"            # Weak: Please lower gravity.
-#    strength: [~, 22]        # < 15 PC-rec.
-#  - string: "%"            # The safest place is in front of my gun.
-#    firing: [~, 45]          # < 15 PC-rec.
-
-  # Spacing, use from above
-#  - string: " "
-#    psiStrength: [~, 34]
-#  - string: " "
-#    bravery: [~, 15]
-#  - string: " "
-#    strength: [~, 22]
-#  - string: " "
-#    firing: [~, 45]
 
   # Role independent stats.
     # Offensive Psi (illusionist), not a specialized role since it is unconventional.
