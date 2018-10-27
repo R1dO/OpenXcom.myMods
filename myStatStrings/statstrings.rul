@@ -10,7 +10,7 @@
 # Reactions          |  30 - 60  | 100   | reactions   |          |      r/R |
 # Firing Accuracy    |  40 - 70  | 120   | firing      |          |      m/M |
 # Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
-# Melee Accuracy     |  20 - 40  | 120   | melee       |          |      +/* |
+# Melee Accuracy     |  20 - 40  | 120   | melee       |          |      k/K |
 # Strength           |  20 - 40  |  70   | strength    |          | h/H      |
 # Psi Sthrength      |   0 - 100 | 100   | psiStrength | ~        | p/P      |
 # Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I      |
@@ -98,7 +98,7 @@
     firing: [104, ~]        # > 90 PC-imp.
   - string: "R"           # Lucky Luke
     reactions: [86, ~]      # > 80 PC-imp.
-  - string: "*"           # 3 ... 2 ... 1 ... KNOCKOUT
+  - string: "K"           # 3 ... 2 ... 1 ... KNOCKOUT
     melee: [100, ~]         # > 80 PC-imp
 
   # Talented stats
@@ -122,5 +122,5 @@
     firing: [64, 104]       # > 75 PC-imp, < 90 PC-imp. (wish: reduce it?)
   - string: "r"           # Reaction.
     reactions: [53, 85]     # > 75 PC-rec, < 80 PC-imp.
-  - string: "+"           # Streetfighter
+  - string: "k"           # Streetfighter
     melee: [55, 99]         # > 75 PC-rec
