@@ -75,7 +75,6 @@
   - string: " SNPR"       # Come out, come out ... wherever you are.
     firing: [104, ~]        # > 80 PC-imp.
     reactions: [86, ~]      # > 80 PC-imp.
-    melee: [55, ~]           # 2nd, > 75 PC-rec
     stamina: [60, ~]         # 2nd, > > 75 PC-rec.
     tu: [60, ~]              # 2nd, > > 75 PC-rec.
     # Legendary Scout
