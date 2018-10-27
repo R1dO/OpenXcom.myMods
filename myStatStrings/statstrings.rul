@@ -5,14 +5,14 @@
 # Name:              | min - max | limit | statstring  | negative | positive |
 # Time units         |  50 - 60  |  80   | tu          |          |          |
 # Stamina            |  40 - 70  | 100   | stamina     |          |          |
-# Health             |  25 - 40  |  60   | health      |          |      a/A |
-# Bravery            |  10 - 60  | 100   | bravery     | c        | b/B      |
+# Health             |  25 - 40  |  60   | health      |          |          |
+# Bravery            |  10 - 60  | 100   | bravery     | _        | b/B      |
 # Reactions          |  30 - 60  | 100   | reactions   |          |      r/R |
-# Firing Accuracy    |  40 - 70  | 120   | firing      | %        |      m/M |
+# Firing Accuracy    |  40 - 70  | 120   | firing      |          |      m/M |
 # Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
-# Melee Accuracy     |  20 - 40  | 120   | melee       |          |      +/* |
-# Strength           |  20 - 40  |  70   | strength    | w        | h/H      |
-# Psi Sthrength      |   0 - 100 | 100   | psiStrength | x        | p/P      |
+# Melee Accuracy     |  20 - 40  | 120   | melee       |          |      k/K |
+# Strength           |  20 - 40  |  70   | strength    |          | h/H      |
+# Psi Sthrength      |   0 - 100 | 100   | psiStrength | ~        | p/P      |
 # Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I      |
 #
 # * Not 0 - 16, since it will only be known after psi training in a psilab.
@@ -38,24 +38,10 @@
   # Start with negative identifiers
   - string: " psi-stud"    # Unskilled: Does everyone wear tinfoil hats??
     psiSkill: [~, 16]        # Lowest possible value, training in lab outclasses mission experience.
-  - string: "x"            # Puppet.
+  - string: "~"            # Puppet.
     psiStrength: [~, 34]     # < 30 PC-rec.
-  - string: "c"            # Coward: He said *boo* to me <snif> <snif>
+  - string: "_"            # Coward: He said *boo* to me <snif> <snif>
     bravery: [~, 15]         # < 10 PC-rec.
-  - string: "w"            # Weak: Please lower gravity.
-    strength: [~, 22]        # < 15 PC-rec.
-  - string: "%"            # The safest place is in front of my gun.
-    firing: [~, 45]          # < 15 PC-rec.
-
-  # Spacing, use from above
-  - string: " "
-    psiStrength: [~, 34]
-  - string: " "
-    bravery: [~, 15]
-  - string: " "
-    strength: [~, 22]
-  - string: " "
-    firing: [~, 45]
 
   # Role independent stats.
     # Offensive Psi (illusionist), not a specialized role since it is unconventional.
@@ -89,10 +75,8 @@
   - string: " SNPR"       # Come out, come out ... wherever you are.
     firing: [104, ~]        # > 80 PC-imp.
     reactions: [86, ~]      # > 80 PC-imp.
-    melee: [55, ~]           # 2nd, > 75 PC-rec
-    health: [37, ~]          # 2nd, > 75 PC-rec
-    stamina: [60, ~]         # 2nd, > > 75 PC-rec.
-    tu: [60, ~]              # 2nd, > > 75 PC-rec.
+    stamina: [60, ~]         # 2nd, > 75 PC-rec.
+    tu: [60, ~]              # 2nd, > 75 PC-rec.
     # Legendary Scout
   - string: " SCT"        # I will reveal all
     reactions: [86, ~]      # > 80 PC-imp.
@@ -100,39 +84,36 @@
     stamina: [88, ~]        # > 80 PC-imp.
     melee: [55, ~]           # 2nd, > 75 PC-rec
     firing: [64, ~]          # 2nd, > 75 PC-rec
-    health: [37, ~]          # 2nd, > 75 PC-rec
   # Legendary Soldier (breach ufo)
   - string: " SLDR"       # BANG .. BANG .. OPEN UP
     health: [53, ~]         # > 80 PC-imp
     melee: [100, ~]         # > 80 PC-imp
     firing: [64, ~]          # 2nd, > 75 PC-rec
-    reactions: [53, ~]       # 2nd, > 80 PC-rec
-    stamina: [60, ~]         # 2nd, > > 75 PC-rec.
-    tu: [60, ~]              # 2nd, > > 75 PC-rec.
+    reactions: [53, ~]       # 2nd, > 75 PC-rec
+    stamina: [60, ~]         # 2nd, > 75 PC-rec.
+    tu: [60, ~]              # 2nd, > 75 PC-rec.
 
     # Legendary capabilities (for those that didn't graduate)
   - string: "M"           # Take a peak ... please ... pretty please?
     firing: [104, ~]        # > 90 PC-imp.
   - string: "R"           # Lucky Luke
     reactions: [86, ~]      # > 80 PC-imp.
-  - string: "A"           # Live long and prosper
-    health: [53, ~]         # > 80 PC-imp.
-  - string: "*"           # 3 ... 2 ... 1 ... KNOCKOUT
+  - string: "K"           # 3 ... 2 ... 1 ... KNOCKOUT
     melee: [100, ~]         # > 80 PC-imp
 
   # Talented stats
     # Talented Sniper
   - string: " Snpr"
     firing: [64, ~]       # > 75 PC-rec
-    reactions: [53, ~]    # > 80 PC-rec
+    reactions: [53, ~]    # > 75 PC-rec
     # Talented Scout
   - string: " Sct"
-    reactions: [53, ~]    # > 80 PC-rec
+    reactions: [53, ~]    # > 75 PC-rec
     tu: [60, ~]           # > 75 PC-rec.
     stamina: [60, ~]      # > 75 PC-rec.
     # Talented Soldier (breach ufo)
   - string: " Sldr"
-    reactions: [53, ~]    # > 80 PC-rec
+    reactions: [53, ~]    # > 75 PC-rec
     health: [37, ~]       # > 75 PC-rec
     melee: [55, ~]        # > 75 PC-rec
 
@@ -141,7 +122,5 @@
     firing: [64, 104]       # > 75 PC-imp, < 90 PC-imp. (wish: reduce it?)
   - string: "r"           # Reaction.
     reactions: [53, 85]     # > 75 PC-rec, < 80 PC-imp.
-  - string: "a"           # Armor, good health so armor is not a total waste.
-    health: [37, ~]         # > 80 PC-imp.
-  - string: "+"           # Streetfighter
+  - string: "k"           # Streetfighter
     melee: [55, 99]         # > 75 PC-rec
