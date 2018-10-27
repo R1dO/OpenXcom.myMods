@@ -6,13 +6,13 @@
 # Time units         |  50 - 60  |  80   | tu          |          |          |
 # Stamina            |  40 - 70  | 100   | stamina     |          |          |
 # Health             |  25 - 40  |  60   | health      |          |      a/A |
-# Bravery            |  10 - 60  | 100   | bravery     | c        | b/B      |
+# Bravery            |  10 - 60  | 100   | bravery     | _        | b/B      |
 # Reactions          |  30 - 60  | 100   | reactions   |          |      r/R |
 # Firing Accuracy    |  40 - 70  | 120   | firing      |          |      m/M |
 # Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
 # Melee Accuracy     |  20 - 40  | 120   | melee       |          |      +/* |
-# Psi Sthrength      |   0 - 100 | 100   | psiStrength | x        | p/P      |
 # Strength           |  20 - 40  |  70   | strength    |          | h/H      |
+# Psi Sthrength      |   0 - 100 | 100   | psiStrength | ~        | p/P      |
 # Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I      |
 #
 # * Not 0 - 16, since it will only be known after psi training in a psilab.
@@ -38,9 +38,9 @@
   # Start with negative identifiers
   - string: " psi-stud"    # Unskilled: Does everyone wear tinfoil hats??
     psiSkill: [~, 16]        # Lowest possible value, training in lab outclasses mission experience.
-  - string: "x"            # Puppet.
+  - string: "~"            # Puppet.
     psiStrength: [~, 34]     # < 30 PC-rec.
-  - string: "c"            # Coward: He said *boo* to me <snif> <snif>
+  - string: "_"            # Coward: He said *boo* to me <snif> <snif>
     bravery: [~, 15]         # < 10 PC-rec.
 #  - string: "w"            # Weak: Please lower gravity.
 #    strength: [~, 22]        # < 15 PC-rec.
@@ -48,10 +48,10 @@
 #    firing: [~, 45]          # < 15 PC-rec.
 
   # Spacing, use from above
-  - string: " "
-    psiStrength: [~, 34]
-  - string: " "
-    bravery: [~, 15]
+#  - string: " "
+#    psiStrength: [~, 34]
+#  - string: " "
+#    bravery: [~, 15]
 #  - string: " "
 #    strength: [~, 22]
 #  - string: " "
