@@ -59,11 +59,11 @@
     strength: [35, 59]      # > 75 PC-all, < 80 PC-imp.
   - string: "H"           # On steroids.
     strength: [60, ~]       # > 80 PC-imp.
-    # Defensive brave
-  - string: "b"           # I want to be him when I grow up.
-    bravery: [50, 81]       # > 80 PC-rec, < 80 PC-all.
-  - string: "B"           # Suicidal hero.
-    bravery: [82, ~]        # > 80 PC-all.
+    # Defensive brave (not really usefull to warrant its own designation, hence not using)
+#  - string: "b"           # I want to be him when I grow up.
+#    bravery: [50, 81]       # > 80 PC-rec, < 80 PC-all.
+#  - string: "B"           # Suicidal hero.
+#    bravery: [82, ~]        # > 80 PC-all.
     # Common grenadier capabilities.
   - string: "g"           # Baseball player.
     throwing: [72, 105]     # > 75 PC-all, < 80 PC-imp.
