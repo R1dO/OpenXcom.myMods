@@ -28,11 +28,6 @@
 # - Talented stats are put at the end of the file to prevent collision
 #   with legendary non-primary stats.
 # - * PC = percentile
-#   * rec = recruit
-#   * all = all recruited soldiers (incl memorial)
-#   * imp = improved only (if too little info, base on theoretical max).
-# - Prefered is PC's based on current soldiers (e.g. relative), this is not
-#   possible at the moment.
 
   statStrings:
   # Start with negative identifiers
@@ -59,11 +54,6 @@
     strength: [35, 59]      # > 75 PC-all, < 80 PC-imp.
   - string: "H"           # On steroids.
     strength: [60, ~]       # > 80 PC-imp.
-    # Defensive brave (not really usefull to warrant its own designation, hence not using)
-#  - string: "b"           # I want to be him when I grow up.
-#    bravery: [50, 81]       # > 80 PC-rec, < 80 PC-all.
-#  - string: "B"           # Suicidal hero.
-#    bravery: [82, ~]        # > 80 PC-all.
     # Common grenadier capabilities.
   - string: "g"           # Baseball player.
     throwing: [74, 105]     # > 75 PC, < 80 PC.
@@ -71,19 +61,6 @@
     throwing: [106, ~]      # > 80 PC.
 
   # Legendary role stats & above average 2nd stats (other roles)
-    # Legendary Sniper
-  - string: " SNPR"       # Come out, come out ... wherever you are.
-    firing: [104, ~]        # > 95 PC
-    reactions: [86, ~]      # > 95 PC
-    stamina: [66, ~]         # 2nd, > 75 PC
-    tu: [60, ~]             # 2nd, > 75 PC
-    # Legendary Scout
-  - string: " SCT"        # I will reveal all
-    reactions: [86, ~]      # > 95 PC
-    tu: [74, ~]             # > 80 PC
-    stamina: [88, ~]        # > 90 PC
-    melee: [55, ~]           # 2nd, > 75 PC
-    firing: [66, ~]          # 2nd, > 80 PC
   # Legendary Soldier (breach ufo)
   - string: " SLDR"       # BANG .. BANG .. OPEN UP
     health: [53, ~]         # > 90 PC
@@ -92,35 +69,44 @@
     reactions: [53, ~]       # 2nd, > 75 PC
     stamina: [66, ~]         # 2nd, > 75 PC
     tu: [60, ~]              # 2nd, > 75 PC
+    # Legendary Scout
+  - string: " SCT"        # I will reveal all
+    reactions: [86, ~]      # > 95 PC
+    tu: [74, ~]             # > 80 PC
+    stamina: [88, ~]        # > 90 PC
+    melee: [55, ~]           # 2nd, > 75 PC
+    firing: [66, ~]          # 2nd, > 80 PC
+    # Legendary Sniper
+  - string: " SNPR"       # Come out, come out ... wherever you are.
+    firing: [104, ~]        # > 95 PC
+    reactions: [86, ~]      # > 95 PC
+    stamina: [66, ~]         # 2nd, > 75 PC
+    tu: [60, ~]             # 2nd, > 75 PC
 
     # Legendary capabilities (for those that didn't graduate)
   - string: "M"           # Take a peak ... please ... pretty please?
     firing: [104, ~]        # > 95 PC
   - string: "R"           # Lucky Luke
     reactions: [86, ~]      # > 95 PC
-#  - string: "K"           # 3 ... 2 ... 1 ... KNOCKOUT
-#    melee: [100, ~]         # > 80 PC-imp
 
   # Talented stats
-    # Talented Sniper
-  - string: " Snpr"
-    firing: [66, ~]       # > 80 PC
-    reactions: [53, ~]    # > 80 PC
-    # Talented Scout
-  - string: " Sct"
-    reactions: [53, ~]    # > 80 PC
-    tu: [60, ~]           # > 75 PC
-    stamina: [66, ~]      # > 75 PC
     # Talented Soldier (breach ufo)
   - string: " Sldr"
     reactions: [53, ~]    # > 80 PC
     health: [39, ~]       # > 75 PC
     melee: [55, ~]        # > 75 PC
+    # Talented Scout
+  - string: " Sct"
+    reactions: [53, ~]    # > 80 PC
+    tu: [60, ~]           # > 75 PC
+    stamina: [66, ~]      # > 75 PC
+    # Talented Sniper
+  - string: " Snpr"
+    firing: [66, ~]       # > 80 PC
+    reactions: [53, ~]    # > 80 PC
 
   # No roles, put above average capabilities here.
   - string: "m"           # Marksman
     firing: [66, 104]       # > 80 PC, < 95 PC.
   - string: "r"           # Reaction.
     reactions: [53, 85]     # > 80 PC, < 95 PC.
-#  - string: "k"           # Streetfighter
-#    melee: [55, 99]         # > 75 PC
