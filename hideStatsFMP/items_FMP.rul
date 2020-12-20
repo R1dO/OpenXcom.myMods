@@ -1,0 +1,94 @@
+﻿items:
+  - type: STR_MULTI_LAUNCHER
+    requiresStats:
+      - STR_MULTI_LAUNCHER
+  - type: STR_ROCKET_PACK
+    requiresStats:
+      - STR_MULTI_LAUNCHER
+  - type: STR_LASER_PISTOL_MIB
+    requiresStats:
+      - STR_LASER_PISTOL_MIB
+  - type: STR_LASER_PISTOL_MIB_CLIP
+    requiresStats:
+      - STR_LASER_PISTOL_MIB
+  - type: STR_LASER_RIFLE_MIB
+    requiresStats:
+      - STR_LASER_RIFLE_MIB
+  - type: STR_LASER_RIFLE_MIB_CLIP
+    requiresStats:
+      - STR_LASER_RIFLE_MIB
+  - type: STR_HEAVY_LASER_MIB
+    requiresStats:
+      - STR_HEAVY_LASER_MIB
+  - type: STR_HEAVY_LASER_MIB_CLIP
+    requiresStats:
+      - STR_HEAVY_LASER_MIB
+  - type: STR_PISTOL_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_RIFLE_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_HC_AA_AMMO
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_AC_AA_AMMO
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_GAUSS_PISTOL
+    requiresStats:
+      - STR_GAUSS_PISTOL
+  - type: STR_GAUSS_PISTOL_CLIP
+    requiresStats:
+      - STR_GAUSS_PISTOL_CLIP
+  - type: STR_GAUSS_RIFLE
+    requiresStats:
+      - STR_GAUSS_RIFLE
+  - type: STR_GAUSS_RIFLE_CLIP
+    requiresStats:
+      - STR_GAUSS_RIFLE_CLIP
+  - type: STR_GAUSS_SNIPER_RIFLE
+    requiresStats:
+      - STR_GAUSS_SNIPER_RIFLE
+  - type: STR_GAUSS_SNIPER_RIFLE_CLIP
+    requiresStats:
+      - STR_GAUSS_SNIPER_RIFLE_CLIP
+  - type: STR_HEAVY_GAUSS
+    requiresStats:
+      - STR_HEAVY_GAUSS
+  - type: STR_HEAVY_GAUSS_CLIP
+    requiresStats:
+      - STR_HEAVY_GAUSS_CLIP
+  - type: STR_SHOTGUN_AA_SHELLS
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_SHOTGUN_AA_SHELLS_AP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_HMG_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_SNIPER_RIFLE_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_HEAVY_SNIPER_RIFLE_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_MAGNUM_AA_DRUM
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_SMG_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_LAUNCHER_ELERIUM
+    requiresStats:
+      - STR_LAUNCHER_ELERIUM
+  - type: STR_LMG_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_LIGHT_MINIGUN_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
+  - type: STR_MINIGUN_AA_CLIP
+    requiresStats:
+      - STR_ALLOY_AMMO
