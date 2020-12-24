@@ -1,9 +1,8 @@
 #
 # Quick mod override to demonstrate hiding weapon stats
 
-name: "R1do: Final Mod Pack hide weapon stats"
+name: "R1dO: FMP hide weapon stats"
 version: "0.01"
-author: "R1do, based on work by Solarius Scorch"
-description: "FMP weapon stats overrides."
-
+author: "R1dO, based on work by Solarius Scorch"
+description: "Final Mod Pack hide weapon stats, for oxc.personal edition."
 master: xcom1
