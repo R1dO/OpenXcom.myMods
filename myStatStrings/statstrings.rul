@@ -31,8 +31,6 @@
 
   statStrings:
 # Negative identifiers
-  - string: " psi-stud"    # Unskilled: Does everyone wear tinfoil hats??
-    psiSkill: [~, 16]        # Lowest possible value, training in lab outclasses mission experience.
   - string: "~"            # Puppet.
     psiStrength: [~, 34]     # < 30 PC-rec.
   - string: "_"            # Coward: He said *boo* to me <snif> <snif>
