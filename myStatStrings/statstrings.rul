@@ -34,7 +34,7 @@
   - string: "~"            # Puppet.
     psiStrength: [~, 34]     # < 30 PC-rec.
   - string: "_"            # Coward: He said *boo* to me <snif> <snif>
-    bravery: [~, 15]         # < 10 PC-rec.
+    bravery: [~, 15]         # < 10 PC-rec (even though it increases with 10 points).
 
 # Role independent stats.
   # Offensive Psi (illusionist), not a specialized role since it is unconventional.
@@ -91,7 +91,7 @@
   # Talented Soldier (breach ufo)
   - string: " Sldr"
     reactions: [54, ~]    # > 80 PC
-    health: [39, ~]       # > 75 PC
+    health: [40, ~]       # > 75 PC
     melee: [56, ~]        # > 75 PC
   # Talented Scout
   - string: " Sct"
