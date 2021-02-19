@@ -12,7 +12,7 @@
 # Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
 # Melee Accuracy     |  20 - 40  | 120   | melee       |          |      k/K |
 # Strength           |  20 - 40  |  70   | strength    |          | h/H      |
-# Psi Sthrength      |   0 - 100 | 100   | psiStrength | ~        | p/P      |
+# Psi Sthrength      |   0 - 100 | 100   | psiStrength | ~/.      | p/P      |
 # Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I      |
 #
 # * Not 0 - 16, since it will only be known after psi training in a psilab.
@@ -32,7 +32,9 @@
   statStrings:
 # Negative identifiers
   - string: "~"            # Puppet.
-    psiStrength: [~, 34]     # < 30 PC-rec.
+    psiStrength: [~, 39]     # < 30 PC-rec.
+  - string: "."            # Still a Puppet.
+    psiStrength: [40, 54]     # ??
   - string: "_"            # Coward: He said *boo* to me <snif> <snif>
     bravery: [~, 15]         # < 10 PC-rec (even though it increases with 10 points).
 
@@ -44,7 +46,7 @@
     psiSkill: [80, ~]       # Not based on stats, wish > 90 PC-all.
   # Defensive Psi
   - string: "p"           # On a mind blocker diet.
-    psiStrength: [66, 84]   # > 60 PC-all, < 90 PC-imp.
+    psiStrength: [70, 84]   # > 60 PC-all, < 90 PC-imp.
   - string: "P"           # Fell in mind blockers.
     psiStrength: [85, ~]    # > 90 PC-imp.
   # Common strength (we want those JUST before potential roles).
