@@ -32,9 +32,9 @@
   statStrings:
 # Negative identifiers
   - string: "~"            # Puppet.
-    psiStrength: [~, 39]     # < 30 PC-rec.
+    psiStrength: [~, 39]
   - string: "."            # Still a Puppet.
-    psiStrength: [40, 54]     # ??
+    psiStrength: [40, 59]
   - string: "_"            # Coward: He said *boo* to me <snif> <snif>
     bravery: [~, 15]         # < 10 PC-rec (even though it increases with 10 points).
 
@@ -46,9 +46,9 @@
     psiSkill: [80, ~]       # Not based on stats, wish > 90 PC-all.
   # Defensive Psi
   - string: "p"           # On a mind blocker diet.
-    psiStrength: [70, 84]   # > 60 PC-all, < 90 PC-imp.
+    psiStrength: [60, 84]
   - string: "P"           # Fell in mind blockers.
-    psiStrength: [85, ~]    # > 90 PC-imp.
+    psiStrength: [85, ~]
   # Common strength (we want those JUST before potential roles).
   - string: "h"           # Meet me at the gym.
     strength: [38, 59]      # > 75 PC-all, < 80 PC-imp.
