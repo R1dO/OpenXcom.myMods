@@ -1,9 +1,9 @@
 #
 # metadata.yaml for personalized version of XcomUtil Statstrings
 
-name: "R1dO: Alternate Statstrings"
-version: 0.5
-description: "Personalized version of 'XcomUtil: Statstrings'"
+name: "R1dO: FMP Statstrings"
+version: 0.9
+description: "Personalized version of 'XcomUtil: Statstrings', tailored for FMP."
 author: "R1dO (original: the OpenXcom team)"
 
 master: "*"

@@ -12,7 +12,7 @@
 # Throwing Accuracy  |  50 - 80  | 120   | throwing    |          | g/G      |
 # Melee Accuracy     |  20 - 40  | 120   | melee       |          |      k/K |
 # Strength           |  20 - 40  |  70   | strength    |          | h/H      |
-# Psi Sthrength      |   0 - 100 | 100   | psiStrength | ~        | p/P      |
+# Psi Sthrength      |   0 - 100 | 100   | psiStrength | ~/.      | p/P      |
 # Psi Skill          |  16 - 24 *| 100   | psiSkill    |          | i/I      |
 #
 # * Not 0 - 16, since it will only be known after psi training in a psilab.
@@ -30,37 +30,37 @@
 # - * PC = percentile
 
   statStrings:
-  # Start with negative identifiers
-  - string: " psi-stud"    # Unskilled: Does everyone wear tinfoil hats??
-    psiSkill: [~, 16]        # Lowest possible value, training in lab outclasses mission experience.
+# Negative identifiers
   - string: "~"            # Puppet.
-    psiStrength: [~, 34]     # < 30 PC-rec.
+    psiStrength: [~, 39]
+  - string: "."            # Still a Puppet.
+    psiStrength: [40, 59]
   - string: "_"            # Coward: He said *boo* to me <snif> <snif>
-    bravery: [~, 15]         # < 10 PC-rec.
+    bravery: [~, 15]         # < 10 PC-rec (even though it increases with 10 points).
 
-  # Role independent stats.
-    # Offensive Psi (illusionist), not a specialized role since it is unconventional.
+# Role independent stats.
+  # Offensive Psi (illusionist), not a specialized role since it is unconventional.
   - string: "i"           # Playing hide and seek ... please come to me.
     psiSkill: [60, 79]      # Not based on stats, wish > 70 PC-all, < 90 PC-all.
   - string: "I"           # SUDO power
     psiSkill: [80, ~]       # Not based on stats, wish > 90 PC-all.
-    # Defensive Psi
+  # Defensive Psi
   - string: "p"           # On a mind blocker diet.
-    psiStrength: [66, 84]   # > 60 PC-all, < 90 PC-imp.
+    psiStrength: [60, 84]
   - string: "P"           # Fell in mind blockers.
-    psiStrength: [85, ~]    # > 90 PC-imp.
-    # Common strength (we want those JUST before potential roles).
+    psiStrength: [85, ~]
+  # Common strength (we want those JUST before potential roles).
   - string: "h"           # Meet me at the gym.
-    strength: [35, 59]      # > 75 PC-all, < 80 PC-imp.
+    strength: [38, 59]      # > 75 PC-all, < 80 PC-imp.
   - string: "H"           # On steroids.
     strength: [60, ~]       # > 80 PC-imp.
-    # Common grenadier capabilities.
+  # Common grenadier capabilities.
   - string: "g"           # Baseball player.
     throwing: [74, 105]     # > 75 PC, < 80 PC.
   - string: "G"           # Bullseye !!!
     throwing: [106, ~]      # > 80 PC.
 
-  # Legendary role stats & above average 2nd stats (other roles)
+# Legendary role stats & above average 2nd stats (other roles)
   # Legendary Soldier (breach ufo)
   - string: " SLDR"       # BANG .. BANG .. OPEN UP
     health: [53, ~]         # > 90 PC
@@ -69,44 +69,44 @@
     reactions: [53, ~]       # 2nd, > 75 PC
     stamina: [66, ~]         # 2nd, > 75 PC
     tu: [60, ~]              # 2nd, > 75 PC
-    # Legendary Scout
+  # Legendary Scout
   - string: " SCT"        # I will reveal all
     reactions: [86, ~]      # > 95 PC
     tu: [74, ~]             # > 80 PC
     stamina: [88, ~]        # > 90 PC
-    melee: [55, ~]           # 2nd, > 75 PC
+    melee: [56, ~]           # 2nd, > 75 PC
     firing: [66, ~]          # 2nd, > 80 PC
-    # Legendary Sniper
+  # Legendary Sniper
   - string: " SNPR"       # Come out, come out ... wherever you are.
     firing: [104, ~]        # > 95 PC
     reactions: [86, ~]      # > 95 PC
     stamina: [66, ~]         # 2nd, > 75 PC
     tu: [60, ~]             # 2nd, > 75 PC
 
-    # Legendary capabilities (for those that didn't graduate)
+  # Legendary capabilities (for those that didn't graduate)
   - string: "M"           # Take a peak ... please ... pretty please?
     firing: [104, ~]        # > 95 PC
   - string: "R"           # Lucky Luke
     reactions: [86, ~]      # > 95 PC
 
-  # Talented stats
-    # Talented Soldier (breach ufo)
+# Talented stats
+  # Talented Soldier (breach ufo)
   - string: " Sldr"
-    reactions: [53, ~]    # > 80 PC
-    health: [39, ~]       # > 75 PC
-    melee: [55, ~]        # > 75 PC
-    # Talented Scout
+    reactions: [54, ~]    # > 80 PC
+    health: [40, ~]       # > 75 PC
+    melee: [56, ~]        # > 75 PC
+  # Talented Scout
   - string: " Sct"
-    reactions: [53, ~]    # > 80 PC
+    reactions: [54, ~]    # > 80 PC
     tu: [60, ~]           # > 75 PC
     stamina: [66, ~]      # > 75 PC
-    # Talented Sniper
+  # Talented Sniper
   - string: " Snpr"
     firing: [66, ~]       # > 80 PC
-    reactions: [53, ~]    # > 80 PC
+    reactions: [54, ~]    # > 80 PC
 
-  # No roles, put above average capabilities here.
+# No roles, put above average capabilities here.
   - string: "m"           # Marksman
     firing: [66, 104]       # > 80 PC, < 95 PC.
   - string: "r"           # Reaction.
-    reactions: [53, 85]     # > 80 PC, < 95 PC.
+    reactions: [54, 85]     # > 80 PC, < 95 PC.
