@@ -6,3 +6,29 @@ startingTime:
   day: 15
   month: 2
   year: 2024
+crafts:
+  - type: STR_DEVRANGER
+    sprite: 0
+    fuelMax: 1500
+    damageMax: 150
+    speedMax: 760
+    accel: 2
+    soldiers: 14
+    vehicles: 3
+    costBuy: 500000
+    costRent: 500000
+    forceShowInMonthlyCosts: true
+    refuelRate: 50
+    transferTime: 72
+    score: 200
+    battlescapeTerrainData:
+      name: PLANE
+      mapDataSets:
+        - BLANKS
+        - PLANE
+      mapBlocks:
+        - name: PLANE
+          width: 10
+          length: 20
+    maxItems: 666
+    maxStorageSpace: 211
