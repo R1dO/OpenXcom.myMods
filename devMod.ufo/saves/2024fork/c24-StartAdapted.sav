@@ -2,7 +2,7 @@ name: c24-StartAdapted
 version: Extended 7.11.6
 engine: Extended
 build: " (v2024-02-11)"
-time: {second: 20, minute: 8, hour: 12, weekday: 5, day: 15, month: 2, year: 2024}
+time: {second: 25, minute: 0, hour: 14, weekday: 5, day: 15, month: 2, year: 2024}
 mods:
   - "xcom1 ver: 1.0"
   - "devMod.ufo ver: 0.01"
@@ -13,9 +13,9 @@ monthsPassed: 0
 graphRegionToggles: ""
 graphCountryToggles: ""
 graphFinanceToggles: ""
-rng: 18446650047221312844
+rng: 14096865056153639461
 funds:
-  - 4138000
+  - 3511500
 maintenance:
   - 0
 userNotes:
@@ -23,12 +23,13 @@ userNotes:
 geoscapeDebugLog:
   - "month: 0 script: gameStart id: 1 type: STR_ALIEN_RESEARCH race: STR_SECTOID region: STR_EUROPE targetZone: -1 targetArea: -1"
   - "month: 0 script: recurringTerror id: 2 type: STR_ALIEN_TERROR race: STR_FLOATER region: STR_NORTH_AFRICA targetZone: 3 targetArea: 1"
+  - "gameTime: 2024-02-15 14:00:00 ufoId: 1 ufoType: STR_SMALL_SCOUT race: STR_SECTOID region: STR_EUROPE trajectory: P0 missionId: 1 missionType: STR_ALIEN_RESEARCH"
 researchScores:
   - 0
 incomes:
   - 6007000
 expenditures:
-  - 1869000
+  - 2495500
 warned: false
 togglePersonalLight: true
 toggleNightVision: false
@@ -41,6 +42,7 @@ ids:
   STR_INTERCEPTOR: 3
   STR_SKYRANGER: 2
   STR_SOLDIER: 9
+  STR_UFO_UNIQUE: 2
 countries:
   - type: STR_USA
     funding:
@@ -146,7 +148,7 @@ countries:
     activityXcom:
       - 0
     activityAlien:
-      - 0
+      - 1
   - type: STR_CANADA
     funding:
       - 288000
@@ -184,7 +186,7 @@ regions:
     activityXcom:
       - 0
     activityAlien:
-      - 0
+      - 1
   - type: STR_SOUTHERN_AFRICA
     activityXcom:
       - 0
@@ -262,6 +264,9 @@ bases:
       - type: STR_SMALL_RADAR_SYSTEM
         x: 1
         y: 3
+      - type: STR_GENERAL_STORES
+        x: 4
+        y: 0
     soldiers:
       - type: STR_SOLDIER
         id: 1
@@ -650,12 +655,12 @@ bases:
       - lon: 5.9663772984260417
         lat: -1.1391742717877247
         id: 1
-        name: SKYRANGER+1
+        name: DEVRANGER-1
         speedLon: 0
         speedLat: 0
         speedRadian: 0
         speed: 0
-        type: STR_SKYRANGER
+        type: STR_DEVRANGER
         fuel: 1000
         damage: 0
         shield: 0
@@ -687,6 +692,8 @@ bases:
         latAuto: 0
     items:
       STR_AC_AP_AMMO: 6
+      STR_AC_HE_AMMO: 10
+      STR_AC_I_AMMO: 10
       STR_AUTO_CANNON: 1
       STR_AVALANCHE_LAUNCHER: 1
       STR_AVALANCHE_MISSILES: 10
@@ -694,9 +701,15 @@ bases:
       STR_CANNON_ROUNDS_X50: 1
       STR_GRENADE: 5
       STR_HC_AP_AMMO: 6
+      STR_HC_HE_AMMO: 10
+      STR_HC_I_AMMO: 10
       STR_HEAVY_CANNON: 1
+      STR_HWP_CANNON_SHELLS: 40
+      STR_INCENDIARY_ROCKET: 10
+      STR_LARGE_ROCKET: 10
       STR_PISTOL: 2
       STR_PISTOL_CLIP: 8
+      STR_PROXIMITY_GRENADE: 10
       STR_RIFLE: 2
       STR_RIFLE_CLIP: 8
       STR_ROCKET_LAUNCHER: 1
@@ -704,16 +717,17 @@ bases:
       STR_SMOKE_GRENADE: 5
       STR_STINGRAY_LAUNCHER: 1
       STR_STINGRAY_MISSILES: 25
+      STR_TANK_CANNON: 1
     scientists: 10
     engineers: 10
 alienMissions:
   - type: STR_ALIEN_RESEARCH
     region: STR_EUROPE
     race: STR_SECTOID
-    nextWave: 0
+    nextWave: 1
     nextUfoCounter: 0
-    spawnCountdown: 120
-    liveUfos: 0
+    spawnCountdown: 4920
+    liveUfos: 1
     uniqueID: 1
     missionSiteZone: -1
   - type: STR_ALIEN_TERROR
@@ -721,10 +735,38 @@ alienMissions:
     race: STR_FLOATER
     nextWave: 0
     nextUfoCounter: 0
-    spawnCountdown: 150
+    spawnCountdown: 30
     liveUfos: 0
     uniqueID: 2
     missionSiteZone: 1
+ufos:
+  - lon: 0.47657175363767768
+    lat: -0.5238796339131172
+    dest:
+      lon: 6.2013213481310148
+      lat: -0.68117458426832256
+      type: STR_WAY_POINT
+      id: 0
+    speedLon: -0.00090901499009228245
+    speedLat: -0.00041289205997367044
+    speedRadian: 0.00088882508203414921
+    speed: 2200
+    type: STR_SMALL_SCOUT
+    uniqueId: 1
+    missionWaveNumber: 0
+    damage: 0
+    shield: 0
+    shieldRechargeHandle: 0
+    altitude: STR_VERY_HIGH
+    direction: STR_NORTH_WEST
+    status: 0
+    huntMode: 0
+    huntBehavior: 0
+    mission: 1
+    trajectory: P0
+    trajectoryPoint: 0
+    fireCountdown: 0
+    escapeCountdown: 0
 generatedEvents:
   {}
 ufopediaRuleStatus:
