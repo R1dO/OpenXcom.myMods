@@ -30,5 +30,5 @@ crafts:
         - name: PLANE
           width: 10
           length: 20
-    maxItems: 666
-    maxStorageSpace: 211
+    maxItems: 60
+    maxStorageSpace: 15
