@@ -9,7 +9,7 @@ startingTime:
 crafts:
   - type: STR_DEVRANGER
     sprite: 0
-    fuelMax: 1500
+    fuelMax: 28
     damageMax: 150
     speedMax: 760
     accel: 2
@@ -32,3 +32,4 @@ crafts:
           length: 20
     maxItems: 60
     maxStorageSpace: 15
+    refuelItem: STR_PISTOL_CLIP
