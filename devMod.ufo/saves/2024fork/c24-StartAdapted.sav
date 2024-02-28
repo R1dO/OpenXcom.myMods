@@ -261,7 +261,7 @@ bases:
       - type: STR_WORKSHOP
         x: 4
         y: 3
-      - type: STR_SMALL_RADAR_SYSTEM
+      - type: STR_DEV_RADAR_SYSTEM
         x: 1
         y: 3
       - type: STR_GENERAL_STORES
@@ -273,6 +273,14 @@ bases:
       - type: STR_DEV_MISSILE_DEFENSES
         x: 5
         y: 0
+      - type: STR_DEV_RADAR_SYSTEM
+        x: 1
+        y: 2
+        buildTime: 18
+      - type: STR_LARGE_RADAR_SYSTEM
+        x: 0
+        y: 0
+        buildTime: 25
       - type: STR_DEV_MISSILE_DEFENSES
         x: 5
         y: 1

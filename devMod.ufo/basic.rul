@@ -62,3 +62,19 @@ facilities:
     ammoItem: STR_RIFLE_CLIP
     ammoMax: 50
     rearmRate: 2
+  - type: STR_DEV_RADAR_SYSTEM
+    spriteShape: 2
+    spriteFacility: 21
+    buildCost: 500000
+    buildTime: 12
+    monthlyCost: 10000
+    radarRange: 1695
+    radarChance: 10
+    mapName: XBASE_04
+    buildCostItems:
+     STR_SMOKE_GRENADE:
+       build: 100
+       refund: 75
+     STR_ELERIUM_115:
+       build: 3
+       refund: 2
