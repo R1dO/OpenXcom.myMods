@@ -267,6 +267,16 @@ bases:
       - type: STR_GENERAL_STORES
         x: 4
         y: 0
+      - type: STR_DEV_DEFENSES
+        x: 1
+        y: 0
+      - type: STR_DEV_MISSILE_DEFENSES
+        x: 5
+        y: 0
+      - type: STR_DEV_MISSILE_DEFENSES
+        x: 5
+        y: 1
+        buildTime: 22
     soldiers:
       - type: STR_SOLDIER
         id: 1
@@ -713,7 +723,7 @@ bases:
       STR_PISTOL_CLIP: 8
       STR_PROXIMITY_GRENADE: 10
       STR_RIFLE: 2
-      STR_RIFLE_CLIP: 8
+      STR_RIFLE_CLIP: 88
       STR_ROCKET_LAUNCHER: 1
       STR_SMALL_ROCKET: 4
       STR_SMOKE_GRENADE: 5

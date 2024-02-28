@@ -33,3 +33,32 @@ crafts:
     maxItems: 60
     maxStorageSpace: 15
     refuelItem: STR_PISTOL_CLIP
+facilities:
+  - type: STR_DEV_DEFENSES
+    spriteShape: 3
+    spriteFacility: 27
+    buildCost: 60
+    buildTime: 34
+    monthlyCost: 1200
+    defense: 188
+    hitRatio: 70
+    fireSound: 9
+    hitSound: 10
+    mapName: XBASE_10
+    ammoNeeded: 3
+    ammoItem: STR_HC_HE_AMMO
+  - type: STR_DEV_MISSILE_DEFENSES
+    spriteShape: 3
+    spriteFacility: 26
+    buildCost: 400000
+    buildTime: 24
+    monthlyCost: 1000
+    defense: 222
+    hitRatio: 60
+    fireSound: 8
+    hitSound: 10
+    mapName: XBASE_09
+    ammoNeeded: 5
+    ammoItem: STR_RIFLE_CLIP
+    ammoMax: 50
+    rearmRate: 2
