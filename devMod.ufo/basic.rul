@@ -78,3 +78,29 @@ facilities:
      STR_ELERIUM_115:
        build: 3
        refund: 2
+research:
+  - name: STR_MOTION_SCANNER
+    cost: 180
+    points: 20
+    needItem: true
+    neededItem: STR_LARGE_ROCKET
+    destroyItem: true
+manufacture:
+  - name: STR_MEDI_KIT
+    category: STR_EQUIPMENT
+    requires:
+      - STR_MEDI_KIT
+    space: 4
+    time: 420
+    cost: 28000
+    refund: true
+    requiredItems:
+      STR_GRENADE: 3
+  - name: STR_RIFLE
+    category: STR_EQUIPMENT
+    space: 1
+    time: 42
+    cost: 280
+    refund: false
+    requiredItems:
+      STR_PISTOL: 2

@@ -719,7 +719,7 @@ bases:
       STR_AVALANCHE_MISSILES: 10
       STR_CANNON: 2
       STR_CANNON_ROUNDS_X50: 1
-      STR_GRENADE: 5
+      STR_GRENADE: 15
       STR_HC_AP_AMMO: 6
       STR_HC_HE_AMMO: 10
       STR_HC_I_AMMO: 10
@@ -727,7 +727,7 @@ bases:
       STR_HWP_CANNON_SHELLS: 40
       STR_INCENDIARY_ROCKET: 10
       STR_LARGE_ROCKET: 10
-      STR_PISTOL: 2
+      STR_PISTOL: 4
       STR_PISTOL_CLIP: 8
       STR_PROXIMITY_GRENADE: 10
       STR_RIFLE: 2
@@ -738,8 +738,24 @@ bases:
       STR_STINGRAY_LAUNCHER: 1
       STR_STINGRAY_MISSILES: 25
       STR_TANK_CANNON: 1
-    scientists: 10
-    engineers: 10
+    scientists: 2
+    engineers: 2
+    research:
+      - project: STR_MOTION_SCANNER
+        assigned: 8
+        spent: 0
+        cost: 154
+    productions:
+      - item: STR_MEDI_KIT
+        assigned: 6
+        spent: 0
+        amount: 10
+        infinite: false
+      - item: STR_RIFLE
+        assigned: 2
+        spent: 0
+        amount: 3
+        infinite: false
 alienMissions:
   - type: STR_ALIEN_RESEARCH
     region: STR_EUROPE
@@ -787,14 +803,18 @@ ufos:
     trajectoryPoint: 0
     fireCountdown: 0
     escapeCountdown: 0
+discovered:
+  - STR_MEDI_KIT
 generatedEvents:
   {}
 ufopediaRuleStatus:
   {}
 manufactureRuleStatus:
-  {}
+  STR_MEDI_KIT: 1
+  STR_RIFLE: 1
 researchRuleStatus:
-  {}
+  STR_MEDI_KIT: 1
+  STR_MOTION_SCANNER: 1
 monthlyPurchaseLimitLog:
   {}
 hiddenPurchaseItems:
@@ -1195,7 +1215,6 @@ options:
   keySelectMusicTrack: 279
   r1doAltBaseScreens: true
   r1doReservedAmountBehavior: 3
-  r1doUseR1doStyleLists: true
+  r1doUseR1doStyleLists: false
   r1doStyle_sellState: true
-  r1doStyle_sellStateList: true
   r1doEnableReverseStatsSearch: false
