@@ -1,8 +1,8 @@
 name: c24-StartAdapted
-version: Extended 7.11.6
+version: Extended 7.11.8
 engine: Extended
-build: " (v2024-02-11)"
-time: {second: 25, minute: 0, hour: 14, weekday: 5, day: 15, month: 2, year: 2024}
+build: " (v2024-02-17)"
+time: {second: 35, minute: 1, hour: 14, weekday: 5, day: 15, month: 2, year: 2024}
 mods:
   - "xcom1 ver: 1.0"
   - "devMod.ufo ver: 0.01"
@@ -15,7 +15,7 @@ graphCountryToggles: ""
 graphFinanceToggles: ""
 rng: 14096865056153639461
 funds:
-  - 3511500
+  - 3511220
 maintenance:
   - 0
 userNotes:
@@ -29,7 +29,7 @@ researchScores:
 incomes:
   - 6007000
 expenditures:
-  - 2495500
+  - 2495780
 warned: false
 togglePersonalLight: true
 toggleNightVision: false
@@ -738,6 +738,7 @@ bases:
       STR_STINGRAY_LAUNCHER: 1
       STR_STINGRAY_MISSILES: 25
       STR_TANK_CANNON: 1
+      STR_ELERIUM_115: 33
     scientists: 2
     engineers: 2
     research:
@@ -776,15 +777,15 @@ alienMissions:
     uniqueID: 2
     missionSiteZone: 1
 ufos:
-  - lon: 0.47657175363767768
-    lat: -0.5238796339131172
+  - lon: 0.46379990322803949
+    lat: -0.52962229157960639
     dest:
       lon: 6.2013213481310148
       lat: -0.68117458426832256
       type: STR_WAY_POINT
       id: 0
-    speedLon: -0.00090901499009228245
-    speedLat: -0.00041289205997367044
+    speedLon: -0.00091510754244350403
+    speedLat: -0.00040783229121524398
     speedRadian: 0.00088882508203414921
     speed: 2200
     type: STR_SMALL_SCOUT
@@ -939,9 +940,9 @@ options:
   useOpenGLSmoothing: true
   debug: true
   debugUi: false
-  soundVolume: 10
-  musicVolume: 31
-  uiVolume: 10
+  soundVolume: 20
+  musicVolume: 46
+  uiVolume: 15
   language: en-US
   battleScrollSpeed: 8
   battleEdgeScroll: 2
@@ -1215,6 +1216,5 @@ options:
   keySelectMusicTrack: 279
   r1doAltBaseScreens: true
   r1doReservedAmountBehavior: 3
-  r1doUseR1doStyleLists: false
   r1doStyle_sellState: true
   r1doEnableReverseStatsSearch: false
